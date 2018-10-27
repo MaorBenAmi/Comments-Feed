@@ -1,0 +1,120 @@
+.fade-in {
+    animation: fadein 3s;
+}
+
+ @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.comments {
+  box-shadow: 0px 9px 0px 0px rgba(255, 255, 255, 0), 0px -9px 0px 0px rgba(255, 255, 255, 0), 10px 0px 30px 0px rgba(0, 0, 0, 0.15), -10px 0px 30px 0px rgba(0, 0, 0, 0.15);
+  width: 500px;
+  min-height: 150px;
+  position: relative;
+  margin: 15px auto;
+  padding: 20px;
+  font-family: "Helvetica Neue",arial,sans-serif;
+  font-size: 15px;
+}
+
+.comments .inner-fade-out {
+  display: none;
+}
+
+
+.comments .inner .comment {
+  padding: 15px;
+  min-height: 48px;
+  color: #ccc;
+  width:100%;
+}
+.comments .inner .comment .avatar {
+  width: 48px;
+  height: 48px;
+  float: left;
+    cursor: pointer;  
+}
+.comments .inner .comment .body {
+  margin-left: 55px;
+}
+.comments .inner .comment .body p {
+  color: black;
+}
+.comments .inner .comment:hover {
+  color: rgba(0, 39, 59, 0.35);
+  background-color: rgba(200, 200, 200, 0.1);
+  border-style: solid;
+}
+
+.add-new {
+    overflow:hidden;
+    background-color: #ccc;
+    height:100%;
+}
+    
+.add-new .input {
+  display: block;
+  width: 95%;
+  border: 3px solid #ccc;
+  color: #888;
+  padding: 8px 10px;
+  outline: 0;
+  font-family: "Helvetica Neue",arial,sans-serif;
+  font-size: 15px;
+    margin:10px auto 10px auto;
+}
+.add-new .input.add-email {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.add-new .input.add-email.dived {
+  margin-top: 2px;
+  padding: 9px 10px 11px 10px;
+}
+.add-new .input.add-comment {
+  margin-top: -5px;
+  max-width: 95%;
+  max-height: 150px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.add-new .send-msg {
+  float: right;
+    cursor:pointer;
+    margin: 0 10px 23px 0;
+    position: relative;
+}
+.add-new .send-msg:hover {
+  color: white;
+  background-color: #ccc;
+}
+
+a {
+  color: #66b34e;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+    
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+.input-group{
+    margin: 10px auto 10px auto;
+}
+
+.error{
+    color:red;
+    width: 95%;
+    margin: 10px auto 10px auto;
+}
